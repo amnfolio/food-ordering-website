@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Offers - FoodExpress</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Available Offers</h2>
+        <div class="offer-grid">
+            <div class="offer-card">
+                <h3>Flat 20% OFF</h3>
+                <p>Get 20% off on orders above ₹299. Valid on all restaurants.</p>
+                <span class="coupon-code" onclick="copyCode('WELCOME20')">WELCOME20</span>
+            </div>
+            <div class="offer-card">
+                <h3>Free Delivery</h3>
+                <p>Free delivery on your first order. No minimum order value.</p>
+                <span class="coupon-code" onclick="copyCode('FREEDEL')">FREEDEL</span>
+            </div>
+            <div class="offer-card">
+                <h3>Flat ₹75 OFF</h3>
+                <p>Get flat ₹75 off on orders above ₹499. Valid on pizza only.</p>
+                <span class="coupon-code" onclick="copyCode('PIZZA75')">PIZZA75</span>
+            </div>
+            <div class="offer-card">
+                <h3>Weekend Special</h3>
+                <p>Get 15% off on biryani orders every Saturday and Sunday.</p>
+                <span class="coupon-code" onclick="copyCode('WEEKEND15')">WEEKEND15</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="footer"></div>
+
+<script src="js/menu-data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/offers.js"></script>
+</body>
+</html>

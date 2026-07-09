@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Placed - FoodExpress</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="section">
+    <div class="container success-box">
+        <div class="tick">✔</div>
+        <h2>Order Placed Successfully!</h2>
+        <p class="mt-20" id="orderIdText"></p>
+        <p id="orderTotalText"></p>
+        <p class="mt-20">Your food is being prepared and will be delivered soon.</p>
+        <a href="index.html" class="btn mt-20">Back to Home</a>
+        <a href="profile.html" class="btn btn-outline mt-20" style="margin-left:10px;">View My Orders</a>
+    </div>
+</section>
+
+<div id="footer"></div>
+
+<script src="js/menu-data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/cart.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const orderId = localStorage.getItem('lastOrderId');
+    const orderTotal = localStorage.getItem('lastOrderTotal');
+
+    if (!orderId) {
+        window.location.href = 'index.html';
+        return;
+    }
+
+    document.getElementById('orderIdText').textContent = 'Order ID: #' + orderId;
+    document.getElementById('orderTotalText').textContent = 'Total Paid: ₹' + orderTotal;
+});
+</script>
+</body>
+</html>

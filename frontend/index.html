@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FoodExpress - Order Food Online</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="hero">
+    <div class="container">
+        <h1>Craving something delicious?</h1>
+        <p>Order your favourite food online from FoodExpress</p>
+        <form class="search-bar" id="homeSearchForm">
+            <input type="text" id="homeSearchInput" placeholder="Search for pizza, burger, biryani...">
+            <button type="submit" class="btn">Search</button>
+        </form>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Explore Restaurants</h2>
+        <div class="category-grid">
+            <a href="pizza.html" class="category-card">
+                <div class="emoji">🍕</div>
+                <h3>Pizza</h3>
+                <p>Cheesy and delicious</p>
+            </a>
+            <a href="burger.html" class="category-card">
+                <div class="emoji">🍔</div>
+                <h3>Burger</h3>
+                <p>Juicy and filling</p>
+            </a>
+            <a href="biryani.html" class="category-card">
+                <div class="emoji">🍛</div>
+                <h3>Biryani</h3>
+                <p>Aromatic and spicy</p>
+            </a>
+            <a href="chinese.html" class="category-card">
+                <div class="emoji">🍜</div>
+                <h3>Chinese</h3>
+                <p>Stir fried favourites</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Popular Right Now</h2>
+        <div class="menu-grid" id="featuredGrid"></div>
+    </div>
+</section>
+
+<div id="footer"></div>
+
+<script src="js/menu-data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

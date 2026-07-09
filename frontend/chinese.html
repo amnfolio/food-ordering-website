@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chinese - FoodExpress</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">🍜 Chinese</h2>
+
+        <div class="filter-tabs">
+            <button class="active" data-sort="default">Default</button>
+            <button data-sort="low">Price: Low to High</button>
+            <button data-sort="high">Price: High to Low</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid"></div>
+    </div>
+</section>
+
+<div id="footer"></div>
+
+<script src="js/menu-data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/cart.js"></script>
+<script>window.CATEGORY = 'chinese';</script>
+<script src="js/category.js"></script>
+</body>
+</html>

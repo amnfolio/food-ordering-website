@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart - FoodExpress</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Your Cart</h2>
+
+        <p class="empty-msg hidden" id="emptyCartMsg">Your cart is empty. <a href="restaurants.html">Browse restaurants</a> to add items.</p>
+
+        <table class="cart-table" id="cartTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="cartTableBody"></tbody>
+        </table>
+
+        <div class="cart-summary" id="cartSummary">
+            <div class="row"><span>Subtotal</span><span id="subtotalAmount">₹0</span></div>
+            <div class="row"><span>Delivery Fee</span><span id="deliveryAmount">₹0</span></div>
+            <div class="row total-row"><span>Total</span><span id="totalAmount">₹0</span></div>
+            <a href="checkout.html" class="btn btn-block mt-20" style="text-align:center;">Proceed to Checkout</a>
+        </div>
+    </div>
+</section>
+
+<div id="footer"></div>
+
+<script src="js/menu-data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
