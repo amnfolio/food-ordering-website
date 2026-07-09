@@ -19,6 +19,26 @@ React, Bootstrap, or other frontend frameworks.
 - Profile page with order history
 - MySQL-backed authentication and order storage
 
+## Live Demo
+
+To try the project locally:
+
+1. Install MySQL and create the database using the schema file in [backend/database/schema.sql](backend/database/schema.sql).
+2. Configure the backend environment in [backend/.env.example](backend/.env.example).
+3. Run the following commands:
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+Then open your browser at:
+
+```text
+http://localhost:5000
+```
+
 ## Folder Structure
 
 ```
