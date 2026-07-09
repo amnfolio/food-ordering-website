@@ -1,13 +1,23 @@
 # FoodExpress - Food Ordering Website
 
-A multi-page food ordering website built with plain HTML, CSS and JavaScript
-on the frontend, a small Node.js/Express server as the bridge to the
-database, and MySQL for storing users and orders (used for login/register
-and order history).
+A modern-looking food ordering web app built with plain HTML, CSS, and JavaScript
+for the frontend, a lightweight Node.js/Express backend for API logic, and MySQL
+for storing users and orders. It includes a multi-page experience for browsing
+restaurants, adding items to the cart, placing orders, and viewing order history.
 
-Note: a browser cannot talk to MySQL directly, so a tiny backend server is
-required just to connect the two. Everything on the frontend is still plain
-HTML/CSS/JS — no React, no Bootstrap, no frontend frameworks.
+This project is designed as a simple full-stack learning and portfolio project.
+A browser cannot talk to MySQL directly, so the Express server acts as the bridge
+between the frontend and database. The frontend remains plain HTML/CSS/JS with no
+React, Bootstrap, or other frontend frameworks.
+
+## Features
+
+- Responsive multi-page food ordering experience
+- Restaurant/category browsing
+- Shopping cart and checkout flow
+- User registration and login
+- Profile page with order history
+- MySQL-backed authentication and order storage
 
 ## Folder Structure
 
